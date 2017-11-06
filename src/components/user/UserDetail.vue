@@ -2,8 +2,8 @@
   <div class="w3-animate-bottom">
 
     <div class="w3-pale-yellow" v-if="id == 1">
-      <h3>User Details</h3>
-      <button class="w3-button w3-green w3-right" @click="goBack">Back</button>
+      <h3 class="w3-padding">User Details</h3>
+      <button class="w3-button w3-green w3-right back-button" @click="goBack">Back</button>
     </div>
 
     <div class="w3-pale-blue" v-if="id == 2">
@@ -17,15 +17,17 @@
     </div>
 
     <!-- Output id params from route -->
-    <p>User loaded has ID: {{ $route.params.id }}</p>
-    <hr />
+    <div class="w3-padding">
+      <p>User loaded has ID: {{ $route.params.id }}</p>
+      <hr />
 
-    <router-link
-      tag="button"
-      :to="link"
-      class="w3-btn w3-blue"
-      >Edit User
-    </router-link>
+      <router-link
+        tag="button"
+        :to="link"
+        class="w3-button w3-blue"
+        >Edit User
+      </router-link>
+    </div>
 
   </div>
 </template>
@@ -73,3 +75,10 @@ export default {
   // }
 }
 </script>
+
+<style scoped>
+  .back-button {
+    border-radius: 50%;
+    transform:translateX(-5px);
+  }
+</style>

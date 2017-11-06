@@ -2,8 +2,9 @@
   <div class="w3-pale-green">
     <div class="clearfix">
 
-      <h3 style="float: left">Manage An Account</h3>
-      <button class="w3-btn w3-orange" style="float: right" @click="goHome">Home</button>
+      <h3 class="w3-left w3-padding">Manage An Account</h3>
+
+      <button class="w3-button w3-orange" style="float: right" @click="goHome">Home</button>
 
     </div>
 
@@ -26,7 +27,11 @@
   }
 </script>
 
-<style>
+<style scoped>
+  .w3-button {
+    border-radius: 50%;
+    transform: translate(-5px, 10px)
+  }
   .clearfix::after {
     content: '';
     clear: both;

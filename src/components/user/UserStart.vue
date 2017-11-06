@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="w3-text-teal w3-padding">
         <p>Please select a User</p>
         <p>Password Hint: admin</p>
 

@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 
 
 // Global Event Bus
@@ -20,7 +20,7 @@ import {routes} from './routes.js';
 const router = new Router ({
   mode: 'history',
   // this is the file path to the project on the website
-  base: '/pages/projects/vue-router-app/',
+  base: '/pages/projects/vuejs_routes/',
   routes,
 
   //code to navigate to specific point on page
@@ -31,7 +31,7 @@ const router = new Router ({
     if (to.hash) {
       return { selector: to.hash };
     }
-    return {x: 0, y: 700};
+    return {x: 0, y: 500};
   }
   });
 
@@ -44,7 +44,7 @@ const router = new Router ({
     //next(); // continues to load desired page
     //next(false); // will abort
     //next(path '/' or {object}); // will redirect
-  })
+  });
 
 
 
@@ -55,4 +55,4 @@ new Vue({
   el: '#app',
   router,
   render: h => h(App)
-})
+});

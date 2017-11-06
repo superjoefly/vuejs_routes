@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <h3>User Edit Page</h3>
+    <h3 class="w3-margin-left">User Edit Page</h3>
 
     <hr />
 
@@ -13,7 +13,7 @@
 
       <hr />
 
-      <button @click="confirmed = true" class="w3-btn w3-green">Confirm</button>
+      <button @click="confirmed = true" class="w3-button w3-green" title="Confirmation of User Details">Confirm</button>
     </div>
 
 
@@ -22,8 +22,8 @@
     <!-- Hash (#data) is set for 'link' in UserDetail.vue -->
     <!-- Code for scrollBehavior is set in main.js -->
 
-    <div style="height: 700px"></div>
-    <p id="data" style="color: red">Demonstration of automatic scroll (using scrollBehavior and hash).</p>
+    <div style="height: 500px"></div>
+    <p id="data" style="color: red; padding: 5px;">Demonstration of automatic scroll (using scrollBehavior and hash).</p>
 
   </div>
 </template>
